@@ -12,9 +12,13 @@ let userEmail;
 const id = Symbol('123')
 const anotherId = Symbol('123')
 
-console.log(id === anotherId);
+// console.log(id === anotherId);
 
 // const bigNumber = 18453654896123289n
+
+
+
+
 
 // reference (Non primitive)
 
@@ -28,14 +32,41 @@ let myObj = {
 }
 
 const myFunctions = function(){
-    console.log("Hello world");
+    // console.log("Hello world");
 }
 
-console.log(typeof bigNumber);
-console.log(typeof outsideTemp);
-console.log(typeof scoreValue);
-console.log(typeof isLoggedIn);
-console.log(typeof id);
-console.log(typeof heros);
-console.log(typeof myObj);
-console.log(typeof myFunctions);
+// console.log(typeof bigNumber);
+// console.log(typeof outsideTemp);
+// console.log(typeof scoreValue);
+// console.log(typeof isLoggedIn);
+// console.log(typeof id);
+// console.log(typeof heros);
+// console.log(typeof myObj);
+// console.log(typeof myFunctions);
+
+
+// ************************************************
+
+// stack (primitive) { any change if made it will return a copy of that }
+// heap (Non-primitive) { any change if made it will return a original/reference }
+
+let myName = "sujal"
+
+let anotherName = myName
+anotherName = "krish"
+
+console.log(myName);
+console.log(anotherName);
+
+
+let userOne = {
+    email: "user@google.com",
+    upi: "user@upi"
+}
+
+let userTwo = userOne
+
+userTwo.email = "sujal@google.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
